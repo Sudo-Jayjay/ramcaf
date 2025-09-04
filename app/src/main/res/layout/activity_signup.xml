@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ramcaf_blue"
+    tools:context=".Signup">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chunkfive_ex"
+                android:text="@string/welcome"
+                android:textColor="@color/ramcaf_yellow"
+                android:textSize="35sp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnSignUp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.088" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="350dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/chunkfive_ex"
+                android:text="@string/join"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/chunkfive_ex"
+                android:text="@string/enter_info"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtName"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/white"
+                android:hint="Name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtNameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:ems="15"
+                    android:fontFamily="@font/chunkfive_ex"
+                    android:inputType="textPersonName"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtSignupPass"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:hint="Password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/constraintLayout2"
+                app:passwordToggleEnabled="true"
+                tools:layout_editor_absoluteY="435dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPassInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:fontFamily="@font/chunkfive_ex"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtSignupPass2"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:hint="Re-enter Password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSignupPass"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPassInput2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="15"
+                    android:fontFamily="@font/chunkfive_ex"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkBoxTC"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/chunkfive_ex"
+                android:text="@string/read_terms"
+                android:textColor="@color/ramcaf_yellow"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnSignUp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSignupPass2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:clickable="true"
+                android:fontFamily="@font/chunkfive_ex"
+                android:text="@string/signup"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:backgroundTint="@color/ramcaf_yellow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxTC" />
+
+            <Button
+                android:id="@+id/btnToTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/ramcaf_blue"
+                android:fontFamily="@font/chunkfive_ex"
+                android:text="@string/terms_and_conds"
+                android:textColor="@color/ramcaf_yellow"
+                android:textStyle="italic"
+                app:backgroundTint="@color/ramcaf_blue"
+                app:elevation="0dp"
+                app:iconPadding="0dp"
+                app:iconTint="@color/ramcaf_blue"
+                app:layout_constraintBottom_toTopOf="@+id/checkBoxTC"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSignupPass2"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/txtEmail"-->
+            <!--                android:layout_width="180dp"-->
+            <!--                android:layout_height="60dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                app:layout_constraintEnd_toStartOf="@+id/radioGroup4"-->
+            <!--                app:layout_constraintHorizontal_bias="0.697"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/txtName"-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/txtInputEmail"-->
+            <!--                    android:layout_height="180dp"-->
+            <!--                    android:layout_width="60dp"-->
+            <!--                    -->
+            <!--                    />-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtName">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtEmail"
+                    android:layout_width="180dp"
+                    android:layout_height="60dp"
+                    android:background="@color/white"
+                    android:hint="APC Email"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtInputEmail"
+                        android:layout_width="180dp"
+                        android:layout_height="60dp"
+                        android:ems="15"
+                        android:fontFamily="@font/chunkfive_ex"
+                        android:inputType="text"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup4"
+                    android:layout_width="160dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <RadioButton
+                        android:id="@+id/radStudent"
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/chunkfive_ex"
+                        android:textSize="11sp"
+                        android:text=" @student.apc.edu.ph"/>
+
+                    <RadioButton
+                        android:id="@+id/radStaff"
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:fontFamily="@font/chunkfive_ex"
+
+                        android:text=" @apc.edu.ph" />
+                </RadioGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

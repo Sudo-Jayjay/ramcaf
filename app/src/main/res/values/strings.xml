@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">RAMCaf</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="admin_login">Admin Log In</string>
+    <string name="staff_login">Staff Log In</string>
+    <string name="administrator">Administrator</string>
+    <string name="staff">Staff</string>
+    <string name="welcome">Welcome to RAMCaf!</string>
+    <string name="join">Glad you could join us!</string>
+    <string name="enter_info">Enter the following information to create your account.</string>
+    <string name="read_terms">I have read and agreed to the Terms and Conditions of the application.</string>
+    <string name="terms_and_conds"><u>Terms and Conditions</u></string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="tcintro">These Terms and Conditions constitute a legally binding agreement made between you – RAMCaf user – and UGE, about your access and the use of our mobile application (“RAMCaf”). </string>
+    <string name="tcdescription">RAMCaf is a mobile application that is used to track the seat availability inside the Asia Pacific College (APC) Cafeteria. We, the United Growth Engineers (UGE), created this application for the goal of lessening the number of people, looking for a place to sit, crowding the inside of APC Cafeteria . This application will help you see the status of each seat without personally going inside the cafeteria .</string>
+    <string name="tcagree">As a RAMCaf user, you must agree to these following terms:</string>
+    <string name="tcitem1">1.   Provided that you are allowed to use this application, you are required to register with the use of this application.</string>
+    <string name="tcitem2">2.	All registration information you submit must be true, accurate, current, and complete.</string>
+    <string name="tcitem3">3.	You are a member of the APC Community, using the APC Email Address as a credential in signing up in this application. </string>
+    <string name="tcitem4">4.	You agree to keep your email and password confidential and will be responsible for all use of your credentials.</string>
+    <string name="tcitem5">5.	UGE, founder of RAMCaf, the administrators, and the developers will not be disclosing any of the credentials given, for  the user’s personal privacy.</string>
+    <string name="tcitem6">6.	It is mandatory to be responsible in scanning the QR Code provided in every seat for the proper tracking of its status.</string>
+    <string name="tcitem7">7.	You will not use this application for any illegal or unauthorized purpose.</string>
+    <string name="tcitem8">8.	Your use of this application will not violate any applicable law or regulation.</string>
+    <string name="tcclosing">If you provide any information that is untrue, inaccurate, not current, or incomplete, we have the right to suspend or terminate your account and refuse any and all current or future use of the Application(or any portion thereof). </string>
+    <string name="privpolicy">We care about data privacy and security. By using the Application, you agree to share your personal information with us. Please be advised the Application is hosted in the Philippines. If you access the Application from any other region of the world with laws or other requirements governing personal data collection, use, or disclosure that differ from applicable laws in the Philippines, then through your continued use of the Application or Services, you are transferring your data to the Philippines, and you expressly consent to have your data transferred to and processed in the Philippines.</string>
+    <string name="done">Done</string>
+    <string name="checkSeats">Check Seat Statuses</string>
+    <string name="setStatus">Set Seat Status</string>
+    <string name="admin_setTables">Set Tables and Seats</string>
+    <string name="admin_setCapacity">Set Cafeteria Seat Capacity</string>
+    <string name="admin_viewLogs">View Logs and Reports</string>
+    <string name="setCapacity">Input maximum cafeteria seat capacity.</string>
+    <string name="btnSetCapacity">Set capacity</string>
+
+    <string name="henlo">Hello!!</string>
+    <string name="user_checkseats">Check Seat Availability</string>
+    <string name="user_setstatus">Set Seat Status</string>
+    <string name="user_longtable">Long Tables</string>
+    <string name="user_shorttable">Short Tables</string>
+    <string name="user_checkstatus">Check Seat Status</string>
+    <string name="user_individual">Individual</string>
+    <string name="user_disinfect">Disinfect Seat</string>
+    <string name="staff_label">Staff</string>
+    <string name="staff_available">Available</string>
+    <string name="staff_checkseats">Check Seat For Disinfection</string>
+    <string name="t1">Table 1</string>
+    <string name="t2">Table 2</string>
+    <string name="t3">Table 3</string>
+
+    <string name="textView">textView5</string>
+    <string name="user_set_seat_status">Set Seat Status</string>
+    <string name="user_reminder">Tap the camera to scan again</string>
+    <string name="user_label">Scan Seat QR Code</string>
+
+    <string name="seatstoDisinfect">Seats to be Disinfected</string>
+
+    <string name="logout">Log out</string>
+
+</resources>
